@@ -1,8 +1,10 @@
 # ADR-0002: GitHub-backed content sources (zenn-content + blog-content)
 
-- Status: Accepted
+- Status: Accepted (amended by ADR-0003 for repo strategy)
 - Date: 2026-05-14
 - Owner: haru0416-dev (GitHub)
+
+> **Amendment note**: §1「採用する 2 リポジトリ」と Alt 2 の不採用理由は ADR-0003 で訂正済。実体は単一リポジトリ `haru-content/{articles,blog}/`。本 ADR の取得方式・frontmatter 契約・fail-soft 設計は引き続き有効。
 
 ## Context
 
