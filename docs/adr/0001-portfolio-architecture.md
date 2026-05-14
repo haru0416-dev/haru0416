@@ -126,8 +126,11 @@ github / zenn / mail
 
 ### Follow-ups
 - フォント選定（無料 / セルフホスト / Google Fonts）の確定
-- Zenn RSS の取得失敗時の挙動（ADR 別建てか実装で対処）
-- favicon / OG 画像の方針（後続 ADR で扱う可能性）
+- **Zenn-content GitHub repo を補助データソースに採用**:
+  - 本人が Zenn の GitHub 連携を始める予定。RSS を主としつつ、`articles/*.md` のフロントマターから topic / emoji / type / published フラグを取り、Writing index のメタを強化する
+  - 同時に RSS 障害時の fallback として機能させる
+  - リポジトリ作成後に別 ADR で取得方式（raw fetch / git submodule / GitHub API）を決定
+- OG 画像の方針（後続 ADR で扱う可能性）
 - ドメイン `haru0416.dev` 取得と Workers への割当
 
 ## Alternatives
